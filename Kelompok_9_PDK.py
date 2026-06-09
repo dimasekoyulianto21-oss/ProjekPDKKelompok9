@@ -98,16 +98,6 @@ def interpolate(df, value_col):
 
 if menu == "Home Dashboard":
 
-    st.title("Pengolahan Data Kelautan Kelompok 9")
-
-    st.image(
-        "https://images.unsplash.com/photo-1451187580459-43490279c0fa",
-        use_container_width=True
-    )
-    
-    st.title("🌊 Dashboard Oseanografi - Kelompok 9")
-    st.caption("Analisis SST dan Klorofil-a Laut Banda")
-
     st.subheader("Ringkasan SST")
 
     col1,col2, col5 = st.columns(3)
