@@ -51,7 +51,7 @@ st.markdown("""
             rgba(0, 25, 50, 0.78),
             rgba(0, 70, 110, 0.82)
         ),
-        url("https://images.unsplash.com/photo-1500375592092-40eb2168fd21");
+        url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMUIkBmIX9sHRN5MXa699-pX9megBzk-VQ5A&s");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
