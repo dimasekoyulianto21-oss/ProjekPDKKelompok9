@@ -51,7 +51,7 @@ st.markdown("""
             rgba(0, 25, 50, 0.78),
             rgba(0, 70, 110, 0.82)
         ),
-        url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMUIkBmIX9sHRN5MXa699-pX9megBzk-VQ5A&s");
+        url("https://images.unsplash.com/photo-1500375592092-40eb2168fd21");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -129,7 +129,7 @@ chl_max = chl_df["chl"].max()
 st.sidebar.markdown("""
 <div style='text-align:center;'>
 
-<img src='https://cdn-icons-png.flaticon.com/512/2784/2784487.png'
+<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMUIkBmIX9sHRN5MXa699-pX9megBzk-VQ5A&s'
 width='90'>
 
 <h2 style='color:white;'>
