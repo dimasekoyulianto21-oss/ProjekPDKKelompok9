@@ -13,8 +13,8 @@ st.set_page_config(
     layout="wide"
 )
 
-url_sst = "https://drive.google.com/file/d/16Q5ICRrXeqbAJEbdOE370oh_-p0TO7w3/view?usp=drive_link"
-url_chl = "https://drive.google.com/file/d/1NUGuWdAbZypRuugfLz2zpNBEf7IJnOUA/view?usp=drive_link"
+url_sst = "https://drive.google.com/uc?id=16Q5ICRrXeqbAJEbdOE370oh_-p0TO7w3"
+url_chl = "https://drive.google.com/uc?id=1NUGuWdAbZypRuugfLz2zpNBEf7IJnOUA"
 
 @st.cache_data
 def load_data():
