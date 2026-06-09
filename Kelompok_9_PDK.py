@@ -41,6 +41,62 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+st.markdown("""
+<style>
+
+/* ===== SIDEBAR BACKGROUND ===== */
+[data-testid="stSidebar"]{
+    background-image:
+        linear-gradient(
+            rgba(0, 25, 50, 0.78),
+            rgba(0, 70, 110, 0.82)
+        ),
+        url("https://images.unsplash.com/photo-1500375592092-40eb2168fd21");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ===== JUDUL SIDEBAR ===== */
+[data-testid="stSidebar"] h1{
+    color:white !important;
+    text-align:center;
+    font-size:28px;
+    font-weight:800;
+}
+
+/* ===== SELECTBOX MENU ===== */
+[data-testid="stSidebar"] .stSelectbox{
+    background: rgba(255,255,255,0.08);
+    border-radius:12px;
+    padding:8px;
+    backdrop-filter: blur(8px);
+}
+
+/* Label selectbox */
+[data-testid="stSidebar"] label{
+    color:white !important;
+    font-weight:600;
+}
+
+/* ===== SEMUA TEKS SIDEBAR ===== */
+[data-testid="stSidebar"] *{
+    color:white;
+}
+
+/* ===== GARIS PEMBATAS ===== */
+[data-testid="stSidebar"] hr{
+    border-color: rgba(255,255,255,0.2);
+}
+
+/* ===== CAPTION ===== */
+[data-testid="stSidebar"] .stCaption{
+    color:#d9f2ff !important;
+}
+
+</style>
+""", unsafe_allow_html=True)
+
 url_sst = "https://drive.google.com/uc?id=16Q5ICRrXeqbAJEbdOE370oh_-p0TO7w3"
 url_chl = "https://drive.google.com/uc?id=1NUGuWdAbZypRuugfLz2zpNBEf7IJnOUA"
 
@@ -70,7 +126,22 @@ sst_max = sst_df["thetao"].max()
 chl_min = chl_df["chl"].min()
 chl_max = chl_df["chl"].max()
 
-st.sidebar.title("Dashboard Kelompok 9")
+st.sidebar.markdown("""
+<div style='text-align:center;'>
+
+<img src='https://cdn-icons-png.flaticon.com/512/2784/2784487.png'
+width='90'>
+
+<h2 style='color:white;'>
+🌊 Dashboard Kelompok 9
+</h2>
+
+<p style='color:#d9f2ff;'>
+Analisis SST & Klorofil-a
+</p>
+
+</div>
+""", unsafe_allow_html=True)
 
 menu = st.sidebar.selectbox(
     "Pilih Menu",
