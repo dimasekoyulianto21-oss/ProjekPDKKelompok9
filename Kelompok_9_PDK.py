@@ -13,6 +13,34 @@ st.set_page_config(
     layout="wide"
 )
 
+st.markdown(
+    """
+    <style>
+    .hero {
+        background: linear-gradient(135deg, #0077b6, #00b4d8, #90e0ef);
+        padding: 40px 30px;
+        border-radius: 16px;
+        text-align: center;
+        color: white;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        margin-bottom: 20px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+        margin-bottom: 10px;
+        font-weight: 800;
+    }
+
+    .hero p {
+        font-size: 16px;
+        opacity: 0.9;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 url_sst = "https://drive.google.com/uc?id=16Q5ICRrXeqbAJEbdOE370oh_-p0TO7w3"
 url_chl = "https://drive.google.com/uc?id=1NUGuWdAbZypRuugfLz2zpNBEf7IJnOUA"
 
@@ -74,7 +102,17 @@ def interpolate(df, value_col):
     return grid_lon, grid_lat, grid_val
 
 if menu == "Home Dashboard":
-
+    
+    st.markdown(
+        """
+        <div class="hero">
+            <h1>🌊 Pengolahan Data Kelautan</h1>
+            <p>Kelompok 9 • Analisis SST & Klorofil-a Laut Banda</p>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+    
     st.subheader("Ringkasan SST")
 
     col1,col2, col5 = st.columns(3)
