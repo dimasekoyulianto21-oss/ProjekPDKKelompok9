@@ -13,29 +13,6 @@ st.set_page_config(
     layout="wide"
 )
 
-st.markdown(
-    """
-    <style>
-    .stApp {
-        background-image: url("https://images.unsplash.com/photo-1500375592092-40eb2168fd21");
-        background-size: cover;
-        background-attachment: fixed;
-    }
-
-    .block-container {
-        background-color: rgba(255,255,255,0.92);
-        padding: 2rem;
-        border-radius: 12px;
-    }
-
-    h1, h2, h3 {
-        color: #0f4c75;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
 url_sst = "https://drive.google.com/uc?id=16Q5ICRrXeqbAJEbdOE370oh_-p0TO7w3"
 url_chl = "https://drive.google.com/uc?id=1NUGuWdAbZypRuugfLz2zpNBEf7IJnOUA"
 
