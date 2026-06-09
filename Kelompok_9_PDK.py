@@ -264,7 +264,20 @@ if menu == "Home Dashboard":
 
 elif menu == "Analisis SST dan Klorofil":
 
-    st.title("Analisis Hubungan SST dan Klorofil-a")
+    st.markdown("""
+    <div style="
+        background: linear-gradient(90deg, #0f4c75, #3282b8);
+        padding: 15px;
+        border-radius: 12px;
+        text-align: center;
+        margin-bottom: 20px;
+        box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    ">
+        <h1 style="color:white; margin:0;">
+            🌊 Analisis Hubungan SST dan Klorofil-a
+        </h1>
+    </div>
+    """, unsafe_allow_html=True)
 
     sst_df["yearmonth"] = sst_df["time"].dt.to_period("M")
     chl_df["yearmonth"] = chl_df["time"].dt.to_period("M")
